@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youtlane/P3_Ohmyfood.git"
+  },
+  "author": "Hanane Youtlane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youtlane/P3_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/youtlane/P3_Ohmyfood#readme"
+}
