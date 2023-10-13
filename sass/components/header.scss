@@ -27,6 +27,57 @@ header {
         font-weight: 500;
         color: $grey;
     }
+    .description{
+        background-color: $bg-color;
+        padding-top: 39px;
+        padding-bottom: 57px;
+        text-align: center;
+        width: 100%;
+        @include tablet{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        
+        
+        /*style of the title description */
+            
+        .description_title {
+            border: 2px solid red;
+            font-size: 24px;
+            margin: 0px;
+            padding-bottom: 14px;
+            @include desktop{
+                font-size: 40px;
+            }
+        }
+        .description_text{
+            color: $grey;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .description_button{
+            margin-top: 27px;
+            width: 218px;
+            height: 50px;   
+            border-radius: 25px;
+            color: white ;  
+            border: 0px;
+            font-weight: 500;
+            padding: 13px 18.75px;
+            font-size: 16px;
+            background-image: $gradient;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            transition: 600ms ease-in-out;
+        
+            &:hover{
+                opacity: 0.8; /* Color functions like lighten not available on gradient */
+                box-shadow: 0px 4px 15px darken($grey-light, 50%); /* Make button shadow darker on hover */
+            
+            }
+        }
+    }
     
 }
 
