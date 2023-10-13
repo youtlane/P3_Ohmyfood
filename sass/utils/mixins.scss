@@ -1,0 +1,26 @@
+/* Mixin pour le breakpoint mobile */
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+/* Mixin pour le breakpoint tablet */
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+/* Mixin pour le breakpoint desktop */
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+/*-------------------------------------------------*/
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

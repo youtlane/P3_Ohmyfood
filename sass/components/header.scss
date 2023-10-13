@@ -1,0 +1,33 @@
+/* Styles pour mobile (styles de base) */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+        border: 2px solid red;
+        width: 100%;
+        text-align: center;
+        height: 36px;
+        padding: 14px 89px 13px 89px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+        @include tablet{
+            
+            padding: 30px 0px;
+            
+        }
+    }
+    .location{
+        background-color: #EAEAEA;
+        height: 50px;
+        width: 100%;
+        @include center-flex;
+        gap: 17px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $grey;
+    }
+    
+}
+
+
