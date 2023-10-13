@@ -1,0 +1,52 @@
+.fonctionnement{
+    border: 2px solid green;
+    
+    margin-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .title{
+        margin: 0;
+    }
+    .list__service{
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .service{
+            display: flex;
+            align-items: center;
+
+            .service__number{
+                color: white;
+                background-color: $purple;
+                border-radius: 50%;
+                @include  center-flex;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                margin-left: -12.5px;
+                
+                
+            }
+            .service__button{
+                border: 2px solid orange;
+                width: 100%;
+                height: 73px;
+                font-size: 16px;
+                background-color: $bg-color;
+                border-radius: 20px;
+                padding: 0;
+                font-weight: 500;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                @include center-flex;
+                gap: 27px;
+                .service__icon.fa {
+                    color: $icon-grey;
+                }
+            }
+            
+        }.service:hover .service__icon.fa {
+            color: $purple;
+        }
+    }
+}
