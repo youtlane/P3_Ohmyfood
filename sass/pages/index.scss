@@ -1,22 +1,38 @@
 .fonctionnement{
     border: 2px solid green;
-    
     margin-top: 48px;
     padding-left: 20px;
     padding-right: 20px;
+    @include tablet{
+        margin-top: 0;
+    }
+    @include desktop{
+        padding: 50px 180px;
+    }
+    
     .title{
         margin: 0;
     }
     .list__service{
+        border: 2px solid pink;
         margin-top: 26px;
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @include tablet{
+            align-items: center;
+            
+        }
+        @include desktop{
+            flex-direction: row;
+        }
         .service{
             display: flex;
             align-items: center;
-
-            .service__number{
+            @include desktop{
+                width: 100%;
+            }
+            &__number{
                 color: white;
                 background-color: $purple;
                 border-radius: 50%;
@@ -28,7 +44,7 @@
                 
                 
             }
-            .service__button{
+            &__button{
                 border: 2px solid orange;
                 width: 100%;
                 height: 73px;
@@ -40,6 +56,12 @@
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
                 @include center-flex;
                 gap: 27px;
+                @include tablet{
+                    width: 323px;
+                }
+                @include desktop{
+                    width: 100%;
+                }
                 .service__icon.fa {
                     color: $icon-grey;
                 }
