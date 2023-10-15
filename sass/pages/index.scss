@@ -104,7 +104,9 @@
     }
 
     .list__restaurant{
-        
+        display: flex;
+        flex-direction: column;
+        gap:18px;
 
         @include tablet{
                 display: grid;
