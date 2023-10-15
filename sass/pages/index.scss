@@ -123,7 +123,8 @@
     
             .card__pic{
                 width: 100%;
-                image-rendering: auto;
+                height: 174px;
+                object-fit: cover;
                 border-radius: 15px 15px 0 0;
                 
             }
@@ -145,6 +146,7 @@
             
                     .card__infos__text {
                         margin: 0;
+                        font-weight: 300;
                     }
             
                 }
@@ -159,21 +161,9 @@
                         margin-right: 25px;
                         position: relative;
                         .fa-regular.fa-heart{
-                            position: absolute;
                             background-color: white;
-                            transition: opacity 1000ms ease-in-out;
                         }
-                        .fa-regular.fa-heart:hover{
-                            opacity: 0; /* fa regular dissapear on hover, fa solid appears instead */
-                            cursor: pointer;
-                        }
-                        .fa-solid.fa-heart {
-                            color: transparent;
-                            background-image: $gradient;
-                            background-clip: text;
-                            -webkit-background-clip:text;
-                        }
-    
+                        @include heart-icon;
     
     
     

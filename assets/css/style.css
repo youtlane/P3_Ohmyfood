@@ -7,6 +7,7 @@
 /* Mixin pour le breakpoint desktop */
 /*-------------------------------------------------*/
 /*      Delete the style         */
+/*     heart icon treatment   */
 /* Styles pour mobile (styles de base) */
 header {
   display: flex;
@@ -241,7 +242,8 @@ ul {
 }
 .restaurants .list__restaurant .card .card__pic {
   width: 100%;
-  image-rendering: auto;
+  height: 174px;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .restaurants .list__restaurant .card .card__content {
@@ -261,6 +263,7 @@ ul {
 }
 .restaurants .list__restaurant .card .card__content .card__infos .card__infos__text {
   margin: 0;
+  font-weight: 300;
 }
 .restaurants .list__restaurant .card .card__content .card__icon {
   display: flex;
@@ -272,8 +275,10 @@ ul {
   position: relative;
 }
 .restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart {
-  position: absolute;
   background-color: white;
+}
+.restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart {
+  position: absolute;
   transition: opacity 1000ms ease-in-out;
 }
 .restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart:hover {
