@@ -202,26 +202,47 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 66px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants {
+    padding: 50px 180px;
+  }
 }
 .restaurants .title {
   margin: 0;
 }
-.restaurants .card {
-  background-color: white;
+@media screen and (min-width: 768px) {
+  .restaurants .list__restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 50px;
+  }
 }
-.restaurants .card .card__pic {
+@media screen and (min-width: 992px) {
+  .restaurants .list__restaurant {
+    gap: 50px 100px;
+  }
+}
+.restaurants .list__restaurant .card {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+.restaurants .list__restaurant .card .card__pic {
   width: 100%;
   image-rendering: auto;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .card .card__content {
+.restaurants .list__restaurant .card .card__content {
   display: flex;
   justify-content: space-between;
 }
-.restaurants .card .card__content .card__infos {
+.restaurants .list__restaurant .card .card__content .card__infos {
   padding-top: 16px;
   padding-bottom: 12px;
   padding-left: 13px;
@@ -229,13 +250,13 @@ ul {
   flex-direction: column;
   gap: 5px;
 }
-.restaurants .card .card__content .card__infos .card__infos__title {
+.restaurants .list__restaurant .card .card__content .card__infos .card__infos__title {
   margin: 0;
 }
-.restaurants .card .card__content .card__infos .card__infos__text {
+.restaurants .list__restaurant .card .card__content .card__infos .card__infos__text {
   margin: 0;
 }
-.restaurants .card .card__content .card__icon {
+.restaurants .list__restaurant .card .card__content .card__icon {
   display: flex;
   align-items: center;
   background-color: white;
@@ -244,16 +265,16 @@ ul {
   margin-right: 25px;
   position: relative;
 }
-.restaurants .card .card__content .card__icon .fa-regular.fa-heart {
+.restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart {
   position: absolute;
   background-color: white;
   transition: opacity 1000ms ease-in-out;
 }
-.restaurants .card .card__content .card__icon .fa-regular.fa-heart:hover {
+.restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart:hover {
   opacity: 0; /* fa regular dissapear on hover, fa solid appears instead */
   cursor: pointer;
 }
-.restaurants .card .card__content .card__icon .fa-solid.fa-heart {
+.restaurants .list__restaurant .card .card__content .card__icon .fa-solid.fa-heart {
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
