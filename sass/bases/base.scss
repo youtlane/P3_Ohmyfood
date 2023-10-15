@@ -1,4 +1,10 @@
-body{
+body {
     margin: 0;
     font-family: "roboto", sans-serif;
+}
+a{
+    @include style-disabled;
+}
+ul{
+    @include style-disabled;
 }

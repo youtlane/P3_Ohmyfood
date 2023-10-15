@@ -5,6 +5,7 @@
 /* Mixin pour le breakpoint tablet */
 /* Mixin pour le breakpoint desktop */
 /*-------------------------------------------------*/
+/*      Delete the style         */
 /* Styles pour mobile (styles de base) */
 header {
   display: flex;
@@ -83,13 +84,27 @@ header .description__button {
   transition: 600ms ease-in-out;
 }
 header .description__button:hover {
-  opacity: 0.8; /* Color functions like lighten not available on gradient */
-  box-shadow: 0px 4px 15px #6b6b6b; /* Make button shadow darker on hover */
+  opacity: 0.8;
+  /* Color functions like lighten not available on gradient */
+  box-shadow: 0px 4px 15px #6b6b6b;
+  /* Make button shadow darker on hover */
 }
 
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
 }
 
 .fonctionnement {
@@ -179,6 +194,70 @@ body {
 }
 .fonctionnement .list__service .service:hover .service__icon.fa {
   color: #9356DC;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  margin-top: 68px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .title {
+  margin: 0;
+}
+.restaurants .card {
+  background-color: white;
+}
+.restaurants .card .card__pic {
+  width: 100%;
+  image-rendering: auto;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .card .card__content {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants .card .card__content .card__infos {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.restaurants .card .card__content .card__infos .card__infos__title {
+  margin: 0;
+}
+.restaurants .card .card__content .card__infos .card__infos__text {
+  margin: 0;
+}
+.restaurants .card .card__content .card__icon {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 0;
+  font-size: 22px;
+  margin-right: 25px;
+  position: relative;
+}
+.restaurants .card .card__content .card__icon .fa-regular.fa-heart {
+  position: absolute;
+  background-color: white;
+  transition: opacity 1000ms ease-in-out;
+}
+.restaurants .card .card__content .card__icon .fa-regular.fa-heart:hover {
+  opacity: 0; /* fa regular dissapear on hover, fa solid appears instead */
+  cursor: pointer;
+}
+.restaurants .card .card__content .card__icon .fa-solid.fa-heart {
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=style.css.map */

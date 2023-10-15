@@ -18,9 +18,17 @@
         @content;
     }
 }
+
 /*-------------------------------------------------*/
 @mixin center-flex {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*      Delete the style         */
+@mixin style-disabled {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
 }
