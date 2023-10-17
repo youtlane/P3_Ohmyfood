@@ -68,24 +68,9 @@ header {
         &__button {
             margin-top: 27px;
             width: 218px;
-            height: 50px;
-            border-radius: 25px;
-            color: white;
-            border: 0px;
-            font-weight: 500;
             padding: 13px 18.75px;
-            font-size: 16px;
-            background-image: $gradient;
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-            transition: 600ms ease-in-out;
-
-            &:hover {
-                opacity: 0.8;
-                /* Color functions like lighten not available on gradient */
-                box-shadow: 0px 4px 15px darken($grey-light, 50%);
-                /* Make button shadow darker on hover */
-
-            }
+            @include btn;
+            @include btn-animate;
         }
     }
 

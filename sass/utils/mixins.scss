@@ -69,12 +69,14 @@
     font-weight: 300;
     font-size: 16px;
     margin: 0;
+    border-bottom: 3px solid #99E2D0;
+    width: 10%;
 }
 
 @mixin style-card {
     display: flex;
     gap: 5px;
-    /*width: 100%;*/
+    width: 387px;
     border-radius: 15px;
     background-color: white;
     padding: 15px;
@@ -82,18 +84,54 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*     animation card menu   */
+/*     btn   */
+@mixin btn {
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    border: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    background-image: $gradient;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/*     animation button gradient   */
+@mixin btn-animate{
+    transition: 600ms ease-in-out;
+    &:hover {
+        opacity: 0.8;
+        /* Color functions like lighten not available on gradient */
+        box-shadow: 0px 4px 15px darken($grey-light, 50%);
+        /* Make button shadow darker on hover */
+
+    }
+}
+            
+
+
+
+
+
+
+
+
+
+
 @mixin animate {
     opacity: 0;
     transform: translateY(20px);
-    animation:  0.5s ease forwards;
+    animation: 0.5s ease forwards;
+
     .carte1 {
         animation-delay: 0.2s;
     }
-    
+
     .carte2 {
         animation-delay: 0.4s;
     }
+
     .carte3 {
         animation-delay: 0.6s;
     }
