@@ -8,6 +8,7 @@
 /*-------------------------------------------------*/
 /*      Delete the style         */
 /*     heart icon treatment   */
+/*     style pages menu   */
 /* Styles pour mobile (styles de base) */
 header {
   display: flex;
@@ -282,7 +283,8 @@ ul {
   transition: opacity 1000ms ease-in-out;
 }
 .restaurants .list__restaurant .card .card__content .card__icon .fa-regular.fa-heart:hover {
-  opacity: 0; /* fa regular dissapear on hover, fa solid appears instead */
+  opacity: 0;
+  /* fa regular dissapear on hover, fa solid appears instead */
   cursor: pointer;
 }
 .restaurants .list__restaurant .card .card__content .card__icon .fa-solid.fa-heart {
@@ -325,6 +327,100 @@ footer .footer__nav {
 footer .footer__nav .footer__nav__icon {
   padding-right: 11px;
   font-size: 13px;
+}
+
+.picture-resturant {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #F6F6F6;
+}
+.menu .menu__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu .menu__header .name {
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+.menu .menu__header .icon {
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.menu .menu__header .icon .fa-regular.fa-heart {
+  font-size: 23px;
+  background-color: #F6F6F6;
+}
+.menu .menu__header .icon .fa-regular.fa-heart {
+  position: absolute;
+  transition: opacity 1000ms ease-in-out;
+}
+.menu .menu__header .icon .fa-regular.fa-heart:hover {
+  opacity: 0;
+  /* fa regular dissapear on hover, fa solid appears instead */
+  cursor: pointer;
+}
+.menu .menu__header .icon .fa-solid.fa-heart {
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.menu .plat_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu .plat_list .plat_title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+.menu .plat_list .carte {
+  display: flex;
+  gap: 5px;
+  width: 349px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.menu .plat_list .carte .carte__title {
+  margin: 0;
+}
+.menu .plat_list .carte .carte__txt {
+  margin: 0;
+  font-weight: 300;
+}
+.menu .plat_list .carte .price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+/*    animation carte           */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
