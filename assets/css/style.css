@@ -9,6 +9,7 @@
 /*      Delete the style         */
 /*     heart icon treatment   */
 /*     style pages menu   */
+/*     animation card menu   */
 /* Styles pour mobile (styles de base) */
 header {
   display: flex;
@@ -335,76 +336,83 @@ footer .footer__nav .footer__nav__icon {
   object-fit: cover;
 }
 
-.menu {
+main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   gap: 40px;
   background-color: #F6F6F6;
 }
-.menu .menu__header {
+main .menu .menu__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.menu .menu__header .name {
+main .menu .menu__header .name {
   font-family: "shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
-.menu .menu__header .icon {
+main .menu .menu__header .icon {
   font-size: 22px;
   font-weight: 400;
   position: relative;
 }
-.menu .menu__header .icon .fa-regular.fa-heart {
+main .menu .menu__header .icon .fa-regular.fa-heart {
   font-size: 23px;
   background-color: #F6F6F6;
 }
-.menu .menu__header .icon .fa-regular.fa-heart {
+main .menu .menu__header .icon .fa-regular.fa-heart {
   position: absolute;
   transition: opacity 1000ms ease-in-out;
 }
-.menu .menu__header .icon .fa-regular.fa-heart:hover {
+main .menu .menu__header .icon .fa-regular.fa-heart:hover {
   opacity: 0;
   /* fa regular dissapear on hover, fa solid appears instead */
   cursor: pointer;
 }
-.menu .menu__header .icon .fa-solid.fa-heart {
+main .menu .menu__header .icon .fa-solid.fa-heart {
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
 }
-.menu .plat_list {
+main .menu .plat_list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.menu .plat_list .plat_title {
+main .menu .plat_list .plat_title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
   margin: 0;
 }
-.menu .plat_list .carte {
+main .menu .plat_list .carte {
   display: flex;
   gap: 5px;
-  width: 349px;
+  /*width: 100%;*/
   border-radius: 15px;
   background-color: white;
   padding: 15px;
   justify-content: space-between;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.menu .plat_list .carte .carte__title {
+main .menu .plat_list .carte .carte__title {
   margin: 0;
 }
-.menu .plat_list .carte .carte__txt {
+main .menu .plat_list .carte .carte__txt {
   margin: 0;
   font-weight: 300;
 }
-.menu .plat_list .carte .price {
+main .menu .plat_list .carte .price {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;

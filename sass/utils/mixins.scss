@@ -74,10 +74,27 @@
 @mixin style-card {
     display: flex;
     gap: 5px;
-    width: 349px;
+    /*width: 100%;*/
     border-radius: 15px;
     background-color: white;
     padding: 15px;
     justify-content: space-between;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*     animation card menu   */
+@mixin animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation:  0.5s ease forwards;
+    .carte1 {
+        animation-delay: 0.2s;
+    }
+    
+    .carte2 {
+        animation-delay: 0.4s;
+    }
+    .carte3 {
+        animation-delay: 0.6s;
+    }
 }
