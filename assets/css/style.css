@@ -19,13 +19,22 @@ header {
   align-items: center;
 }
 header .logo {
-  border: 2px solid red;
+  /*  border: 2px solid red;
   width: 100%;
   text-align: center;
   height: 36px;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px 13px 89px; */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0px;
+  align-items: center;
+  gap: 42px;
+}
+header .logo__pic {
+  padding: 0px 19px 0px 16px;
 }
 @media screen and (min-width: 768px) {
   header .logo {
@@ -243,12 +252,26 @@ ul {
   background-color: white;
   border-radius: 15px;
   margin-top: 18px;
+  position: relative;
 }
 .restaurants .list__restaurant .card .card__pic {
   width: 100%;
   height: 174px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+.restaurants .list__restaurant .card .card__badge {
+  width: 80px;
+  text-align: center;
+  color: #008766;
+  border-radius: 2px;
+  background: #99E2D0;
+  padding: 7px 9px 6px 9px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 17px;
+  margin-top: 13px;
 }
 .restaurants .list__restaurant .card .card__content {
   display: flex;
@@ -334,65 +357,70 @@ footer .footer__nav .footer__nav__icon {
 
 .picture-resturant {
   width: 100%;
-  height: 220px;
+  height: 275px;
   object-fit: cover;
+  position: absolute;
 }
 
-main {
+.menu {
   display: flex;
   flex-direction: column;
-}
-main .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 40px;
+  justify-content: center;
   background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: 240px;
+  position: relative;
 }
-main .menu .menu__header {
+.menu .menu__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 31px 17px 40px;
 }
-main .menu .menu__header .name {
+.menu .menu__header .name {
   font-family: "shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
-main .menu .menu__header .icon {
+.menu .menu__header .icon {
   font-size: 22px;
   font-weight: 400;
   position: relative;
 }
-main .menu .menu__header .icon .fa-regular.fa-heart {
+.menu .menu__header .icon .fa-regular.fa-heart {
   font-size: 23px;
   background-color: #F6F6F6;
 }
-main .menu .menu__header .icon .fa-regular.fa-heart {
+.menu .menu__header .icon .fa-regular.fa-heart {
   position: absolute;
   transition: opacity 1000ms ease-in-out;
 }
-main .menu .menu__header .icon .fa-regular.fa-heart:hover {
+.menu .menu__header .icon .fa-regular.fa-heart:hover {
   opacity: 0;
   /* fa regular dissapear on hover, fa solid appears instead */
   cursor: pointer;
 }
-main .menu .menu__header .icon .fa-solid.fa-heart {
+.menu .menu__header .icon .fa-solid.fa-heart {
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
 }
-main .menu .plat_list {
+.menu .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 10px;
+}
+.menu .container .plat_list {
   display: none;
   animation: showList 1s ease-out forwards;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-main .menu .plat_list .plat_title {
+.menu .container .plat_list .plat_title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
@@ -400,38 +428,80 @@ main .menu .plat_list .plat_title {
   border-bottom: 3px solid #99E2D0;
   width: 10%;
 }
-main .menu .plat_list .carte {
+.menu .container .plat_list .carte {
   display: flex;
   gap: 5px;
-  width: 387px;
   border-radius: 15px;
   background-color: white;
   padding: 15px;
   justify-content: space-between;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-main .menu .plat_list .carte .carte__title {
-  margin: 0;
+@media screen and (min-width: 992px) {
+  .menu .container .plat_list .carte {
+    width: 634px;
+  }
 }
-main .menu .plat_list .carte .carte__txt {
+.menu .container .plat_list .carte .carte__infos {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .container .plat_list .carte .carte__infos .carte__title {
   margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu .container .plat_list .carte .carte__infos .carte__txt {
+  margin: 0;
+  font-size: 15px;
   font-weight: 300;
 }
-main .menu .plat_list .carte .price {
+.menu .container .plat_list .carte .price {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
-main .menu .bloc__1 {
+.menu .container .plat_list .carte {
+  display: flex;
+  gap: 5px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 992px) {
+  .menu .container .plat_list .carte {
+    width: 634px;
+  }
+}
+.menu .container .plat_list .carte .carte__txt .carte__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu .container .plat_list .carte .carte__txt .carte__txt {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu .container .plat_list .carte .price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.menu .container .bloc__1 {
   animation-delay: 0.5s;
   /* Délai pour la première carte */
 }
-main .menu .bloc__2 {
+.menu .container .bloc__2 {
   animation-delay: 1.5s;
   /* Délai pour la deuxième carte */
 }
-main .menu .bloc__3 {
+.menu .container .bloc__3 {
   animation-delay: 2.5s;
   /* Délai pour la troisième carte */
 }
@@ -445,7 +515,7 @@ main .menu .bloc__3 {
     transform: translateY(0);
   }
 }
-main .menu .btn-cmd {
+.menu .container .btn-cmd {
   height: 50px;
   border-radius: 25px;
   color: white;
@@ -458,8 +528,9 @@ main .menu .btn-cmd {
   padding: 16px 48px;
   margin-bottom: 40px;
   transition: 600ms ease-in-out;
+  margin: 0px auto 40px;
 }
-main .menu .btn-cmd:hover {
+.menu .container .btn-cmd:hover {
   opacity: 0.8;
   /* Color functions like lighten not available on gradient */
   box-shadow: 0px 4px 15px #6b6b6b;

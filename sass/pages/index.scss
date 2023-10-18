@@ -120,6 +120,7 @@
             background-color: white;
             border-radius: 15px ;
             margin-top: 18px;
+            position: relative;
     
             .card__pic{
                 width: 100%;
@@ -128,6 +129,20 @@
                 border-radius: 15px 15px 0 0;
                 
             }
+            .card__badge {
+                width: 80px;
+                text-align: center;
+                color: #008766;
+                border-radius: 2px;
+                background: #99E2D0;
+                padding: 7px 9px 6px 9px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin-right: 17px;
+                margin-top: 13px;
+              }
+            
             .card__content{
                 display: flex;
                 justify-content: space-between;
