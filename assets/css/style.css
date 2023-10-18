@@ -414,7 +414,7 @@ footer .footer__nav .footer__nav__icon {
   padding: 0px 10px;
 }
 .menu .container .plat_list {
-  display: none;
+  opacity: 0;
   animation: showList 1s ease-out forwards;
   display: flex;
   flex-direction: column;
@@ -494,7 +494,7 @@ footer .footer__nav .footer__nav__icon {
   flex-direction: column;
 }
 .menu .container .bloc__1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
   /* Délai pour la première carte */
 }
 .menu .container .bloc__2 {

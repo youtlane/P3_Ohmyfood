@@ -51,9 +51,10 @@
         flex-direction: column;
         gap: 40px;
         padding: 0px 10px;
+       
 
         .plat_list {
-            display: none;
+            opacity: 0;
             animation: showList 1s ease-out forwards;
 
             @include style-column;
@@ -124,7 +125,7 @@
         }
 
         .bloc__1 {
-            animation-delay: 0.5s;
+            animation-delay: 0.2s;
             /* Délai pour la première carte */
         }
 
