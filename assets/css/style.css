@@ -10,6 +10,7 @@
 /*      Delete the style         */
 /*     heart icon treatment   */
 /*     style pages menu   */
+/*  */
 /*     btn   */
 /*     animation button gradient   */
 /* Styles pour mobile (styles de base) */
@@ -19,11 +20,6 @@ header {
   align-items: center;
 }
 header .logo {
-  /*  border: 2px solid red;
-  width: 100%;
-  text-align: center;
-  height: 36px;
-  padding: 14px 89px 13px 89px; */
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   display: flex;
@@ -33,12 +29,20 @@ header .logo {
   align-items: center;
   gap: 42px;
 }
+header .logo .back {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  flex: 0.45;
+}
 header .logo__pic {
   padding: 0px 19px 0px 16px;
 }
 @media screen and (min-width: 768px) {
   header .logo {
-    padding: 30px 0px;
+    padding: 30px 0px 32px 17px;
+    justify-content: flex-start;
   }
 }
 header .location {
@@ -120,6 +124,10 @@ ul {
   text-decoration: none;
   list-style: none;
   color: inherit;
+}
+
+.back {
+  opacity: 0;
 }
 
 .fonctionnement {
@@ -355,6 +363,10 @@ footer .footer__nav .footer__nav__icon {
   font-size: 13px;
 }
 
+.back {
+  opacity: 1;
+}
+
 .picture-resturant {
   width: 100%;
   height: 275px;
@@ -407,11 +419,22 @@ footer .footer__nav .footer__nav__icon {
   background-clip: text;
   -webkit-background-clip: text;
 }
+@media screen and (min-width: 992px) {
+  .menu .menu__header {
+    justify-content: center;
+    gap: 24px;
+  }
+}
 .menu .container {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding: 0px 10px;
+}
+@media screen and (min-width: 992px) {
+  .menu .container {
+    align-items: center;
+  }
 }
 .menu .container .plat_list {
   opacity: 0;
@@ -428,14 +451,19 @@ footer .footer__nav .footer__nav__icon {
   border-bottom: 3px solid #99E2D0;
   width: 10%;
 }
+@media screen and (min-width: 768px) {
+  .menu .container .plat_list .plat_title {
+    width: 5%;
+  }
+}
 .menu .container .plat_list .carte {
   display: flex;
   gap: 5px;
   border-radius: 15px;
   background-color: white;
-  padding: 15px;
-  justify-content: space-between;
+  /*  justify-content: space-between;*/
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 @media screen and (min-width: 992px) {
   .menu .container .plat_list .carte {
@@ -443,55 +471,57 @@ footer .footer__nav .footer__nav__icon {
   }
 }
 .menu .container .plat_list .carte .carte__infos {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 95%;
 }
 .menu .container .plat_list .carte .carte__infos .carte__title {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 95%;
 }
 .menu .container .plat_list .carte .carte__infos .carte__txt {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 95%;
 }
 .menu .container .plat_list .carte .price {
-  font-weight: 700;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-.menu .container .plat_list .carte {
-  display: flex;
-  gap: 5px;
-  border-radius: 15px;
-  background-color: white;
   padding: 15px;
-  justify-content: space-between;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-@media screen and (min-width: 992px) {
-  .menu .container .plat_list .carte {
-    width: 634px;
-  }
-}
-.menu .container .plat_list .carte .carte__txt .carte__title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-}
-.menu .container .plat_list .carte .carte__txt .carte__txt {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 300;
-}
-.menu .container .plat_list .carte .price {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  margin-left: auto;
+}
+.menu .container .plat_list .check {
+  width: 59px;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  margin-right: -59px;
+  transition-duration: 1000ms;
+}
+.menu .container .plat_list .carte:hover .check {
+  opacity: 1;
+  margin-right: 0px;
+  box-shadow: 0px 4px 15px #6b6b6b;
 }
 .menu .container .bloc__1 {
   animation-delay: 0.2s;
