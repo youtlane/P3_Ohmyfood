@@ -1,6 +1,3 @@
-.back{
-    opacity: 1;
-}
 .picture-resturant {
     width: 100%;
     height: 275px;
@@ -9,6 +6,13 @@
 }
 
 
+
+.holder {
+    border: 2px solid red;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 
 .menu {
@@ -19,6 +23,10 @@
     border-radius: 40px 40px 0px 0px;
     margin-top: 240px;
     position: relative;
+    width: 100%;
+    @include desktop{
+        width: 80%;
+    }
 
 
 
@@ -135,7 +143,7 @@
 
                 margin-right: -59px;
                 transition-duration: 1000ms;
-                
+
             }
 
             .carte:hover .check {
@@ -143,7 +151,7 @@
 
                 margin-right: 0px;
                 box-shadow: 0px 4px 15px darken($grey-light, 50%);
-                
+
 
 
 
@@ -189,4 +197,5 @@
         }
 
     }
+}
 }
