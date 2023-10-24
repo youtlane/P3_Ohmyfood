@@ -8,8 +8,6 @@
 
 
 .holder {
-    border: 2px solid red;
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,8 +76,8 @@
         .plat_list {
             opacity: 0;
             animation: showList 1s ease-out forwards;
-
             @include style-column;
+            
 
 
             .plat_title {
@@ -91,6 +89,7 @@
             .carte {
                 @include style-card;
                 overflow: hidden;
+
 
 
                 .carte__infos {
@@ -138,9 +137,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 opacity: 0;
-
                 margin-right: -59px;
                 transition-duration: 1000ms;
 
@@ -148,42 +145,8 @@
 
             .carte:hover .check {
                 opacity: 1;
-
                 margin-right: 0px;
                 box-shadow: 0px 4px 15px darken($grey-light, 50%);
-
-
-
-
-
-            }
-        }
-
-        .bloc__1 {
-            animation-delay: 0.2s;
-            /* Délai pour la première carte */
-        }
-
-        .bloc__2 {
-            animation-delay: 1.5s;
-            /* Délai pour la deuxième carte */
-        }
-
-        .bloc__3 {
-            animation-delay: 2.5s;
-            /* Délai pour la troisième carte */
-        }
-
-
-        @keyframes showList {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
             }
         }
 
@@ -195,7 +158,7 @@
             @include btn-animate;
             margin: 0px auto 40px;
         }
-
+        @include delay ;
     }
 }
 }
