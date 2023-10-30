@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: $bg-color;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 40px 40px 0 0;
     margin-top: 240px;
     position: relative;
     width: 100%;
@@ -45,15 +45,20 @@
         .icon {
             font-size: 22px;
             font-weight: 400;
+            display: flex;
+            align-items: center;
             position: relative;
 
             .fa-regular.fa-heart {
-                font-size: 23px;
+                
                 background-color: $bg-color;
             }
 
             @include heart-icon;
         }
+    
+
+
 
         @include desktop {
             justify-content: center;
@@ -66,7 +71,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 0px 10px;
+        padding: 0 10px;
 
         @include desktop {
             align-items: center;
@@ -133,7 +138,7 @@
                 width: 59px;
                 background-color: #99E2D0;
                 color: white;
-                border-radius: 0px 15px 15px 0px;
+                border-radius: 0 15px 15px 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -145,8 +150,8 @@
 
             .carte:hover .check {
                 opacity: 1;
-                margin-right: 0px;
-                box-shadow: 0px 4px 15px darken($grey-light, 50%);
+                margin-right: 0;
+                box-shadow: 0 4px 15px darken($grey-light, 50%);
             }
         }
 
@@ -156,7 +161,7 @@
             padding: 16px 48px;
             margin-bottom: 40px;
             @include btn-animate;
-            margin: 0px auto 40px;
+            margin: 0 auto 40px;
         }
         @include delay ;
     }

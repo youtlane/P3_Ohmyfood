@@ -21,22 +21,22 @@ header {
   align-items: center;
 }
 header .logo-home {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 15px 0px;
+  padding: 15px 0;
   gap: 42px;
   justify-content: center;
 }
 header .logo {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 15px 0px;
+  padding: 15px 0;
   gap: 42px;
 }
 header .logo .back {
@@ -48,7 +48,7 @@ header .logo .back {
   margin-left: 17px;
 }
 header .logo__pic {
-  padding: 0px 19px 0px 16px;
+  padding: 0 19px 0 16px;
 }
 header .location {
   background-color: #EAEAEA;
@@ -78,7 +78,7 @@ header .description {
 }
 header .description__title {
   font-size: 24px;
-  margin: 0px;
+  margin: 0;
   padding-bottom: 14px;
 }
 @media screen and (min-width: 992px) {
@@ -99,17 +99,17 @@ header .description__button {
   height: 50px;
   border-radius: 25px;
   color: white;
-  border: 0px;
+  border: 0;
   font-weight: 500;
   font-size: 16px;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   transition: 600ms ease-in-out;
 }
 header .description__button:hover {
   opacity: 0.8;
   /* Color functions like lighten not available on gradient */
-  box-shadow: 0px 4px 15px #6b6b6b;
+  box-shadow: 0 4px 15px #6b6b6b;
   /* Make button shadow darker on hover */
 }
 
@@ -194,7 +194,7 @@ ul {
   border-radius: 20px;
   padding: 0;
   font-weight: 500;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,7 +343,7 @@ footer .footer__title {
   font-family: "shrikhand", sans-serif;
   font-weight: 400;
   color: white;
-  margin-top: 0px;
+  margin-top: 0;
 }
 footer .footer__nav {
   padding: 0;
@@ -379,7 +379,7 @@ footer .footer__nav .footer__nav__icon {
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 40px 0 0;
   margin-top: 240px;
   position: relative;
   width: 100%;
@@ -404,10 +404,11 @@ footer .footer__nav .footer__nav__icon {
 .holder .menu .menu__header .icon {
   font-size: 22px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 .holder .menu .menu__header .icon .fa-regular.fa-heart {
-  font-size: 23px;
   background-color: #F6F6F6;
 }
 .holder .menu .menu__header .icon .fa-regular.fa-heart {
@@ -435,7 +436,7 @@ footer .footer__nav .footer__nav__icon {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 @media screen and (min-width: 992px) {
   .holder .menu .container {
@@ -468,7 +469,7 @@ footer .footer__nav .footer__nav__icon {
   border-radius: 15px;
   background-color: white;
   /*  justify-content: space-between;*/
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 @media screen and (min-width: 992px) {
@@ -516,7 +517,7 @@ footer .footer__nav .footer__nav__icon {
   width: 59px;
   background-color: #99E2D0;
   color: white;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -526,28 +527,28 @@ footer .footer__nav .footer__nav__icon {
 }
 .holder .menu .container .plat_list .carte:hover .check {
   opacity: 1;
-  margin-right: 0px;
-  box-shadow: 0px 4px 15px #6b6b6b;
+  margin-right: 0;
+  box-shadow: 0 4px 15px #6b6b6b;
 }
 .holder .menu .container .btn-cmd {
   height: 50px;
   border-radius: 25px;
   color: white;
-  border: 0px;
+  border: 0;
   font-weight: 500;
   font-size: 16px;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   width: 186px;
   padding: 16px 48px;
   margin-bottom: 40px;
   transition: 600ms ease-in-out;
-  margin: 0px auto 40px;
+  margin: 0 auto 40px;
 }
 .holder .menu .container .btn-cmd:hover {
   opacity: 0.8;
   /* Color functions like lighten not available on gradient */
-  box-shadow: 0px 4px 15px #6b6b6b;
+  box-shadow: 0 4px 15px #6b6b6b;
   /* Make button shadow darker on hover */
 }
 .holder .menu .container .bloc__1 {
@@ -573,8 +574,18 @@ footer .footer__nav .footer__nav__icon {
     transform: translateY(0);
   }
 }
-.loader {
+.loader_container {
+  width: 100%;
+  height: 100%;
   position: fixed;
+  background-color: rgb(0, 0, 0);
+  z-index: 998;
+  opacity: 0.5;
+  animation: fadeOut 1000ms 1000ms forwards;
+}
+.loader_container .loader {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
   border: 8px solid #f3f3f3;
   border-top: 8px solid #3498db;
   border-radius: 50%;
@@ -585,11 +596,12 @@ footer .footer__nav .footer__nav__icon {
   top: 50%;
   background-color: rgba(0, 0, 0, 0.7450980392);
   transform: translate(-50%, -50%);
-  animation: spin 500ms linear infinite, fadeOut 500ms 500ms forwards; /* Ajoutez l'animation fadeOut */
-  opacity: 1; /* L'élément est visible par défaut */
+  animation: spin 1000ms linear infinite, fadeOut 1000ms 1000ms forwards;
+  /* Ajoutez l'animation fadeOut */
+  opacity: 1;
+  /* L'élément est visible par défaut */
   z-index: 9998;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);

@@ -34,12 +34,12 @@
 }
 
 @mixin head-style {
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
 
@@ -92,7 +92,7 @@
     border-radius: 15px;
     background-color: white;
     /*  justify-content: space-between;*/
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 
     @include desktop {
         width: 634px;
@@ -106,24 +106,16 @@
     overflow: hidden;
     width: 95%;
 }
-
-
-
-
-
-
-
-
 /*     btn   */
 @mixin btn {
     height: 50px;
     border-radius: 25px;
     color: white;
-    border: 0px;
+    border: 0;
     font-weight: 500;
     font-size: 16px;
     background-image: $gradient;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 
 }
 
@@ -134,12 +126,11 @@
     &:hover {
         opacity: 0.8;
         /* Color functions like lighten not available on gradient */
-        box-shadow: 0px 4px 15px darken($grey-light, 50%);
+        box-shadow: 0 4px 15px darken($grey-light, 50%);
         /* Make button shadow darker on hover */
 
     }
 }
-
 
 /*  delay animation*/
 @mixin delay{
