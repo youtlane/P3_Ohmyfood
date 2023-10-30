@@ -564,6 +564,7 @@ footer .footer__nav .footer__nav__icon {
   /* Délai pour la troisième carte */
 }
 
+/**  cards animation          **/
 @keyframes showList {
   0% {
     opacity: 0;
@@ -572,6 +573,23 @@ footer .footer__nav .footer__nav__icon {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/**  loader animation             **/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 .loader_container {

@@ -6,7 +6,9 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./assets/css/style.css"
   },
-  
+  "dependencies": {
+    "sass": "1.69.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/youtlane/P3_Ohmyfood.git"
