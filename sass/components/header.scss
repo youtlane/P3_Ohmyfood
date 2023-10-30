@@ -1,21 +1,18 @@
 /* Styles pour mobile (styles de base) */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .logo-home{
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    .logo-home {
         @include head-style;
         gap: 42px;
-
         justify-content: center;
     }
 
-    .logo {
-        @include head-style;
-        gap: 42px;
+    .logo-home.sans-center {
+        justify-content: initial;
 
-        //justify-content: center;
-   
         .back {
             height: 30px;
             width: 30px;
@@ -23,19 +20,10 @@ header {
             align-items: center;
             flex: 0.45;
             margin-left: 17px;
-
         }
-
 
         &__pic {
             padding: 0 19px 0 16px;
-        }
-
-        @include tablet {
-
-            //padding: 30px 17px;
-            //justify-content: flex-start;
-
         }
     }
 
@@ -62,12 +50,8 @@ header {
             padding-bottom: 30px;
         }
 
-
-
         /*style of the title description */
-
         &__title {
-
             font-size: 24px;
             margin: 0;
             padding-bottom: 14px;
@@ -92,5 +76,4 @@ header {
             @include btn-animate;
         }
     }
-
 }

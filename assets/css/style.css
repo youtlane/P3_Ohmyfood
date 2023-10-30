@@ -15,11 +15,6 @@
 /*     animation button gradient   */
 /*  delay animation*/
 /* Styles pour mobile (styles de base) */
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 header .logo-home {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   position: relative;
@@ -30,16 +25,10 @@ header .logo-home {
   gap: 42px;
   justify-content: center;
 }
-header .logo {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 15px 0;
-  gap: 42px;
+header .logo-home.sans-center {
+  justify-content: initial;
 }
-header .logo .back {
+header .logo-home.sans-center .back {
   height: 30px;
   width: 30px;
   display: flex;
@@ -47,7 +36,7 @@ header .logo .back {
   flex: 0.45;
   margin-left: 17px;
 }
-header .logo__pic {
+header .logo-home.sans-center__pic {
   padding: 0 19px 0 16px;
 }
 header .location {
@@ -608,7 +597,6 @@ footer .footer__nav .footer__nav__icon {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 2s linear infinite;
   left: 50%;
   top: 50%;
   background-color: #9356DC;
@@ -617,22 +605,6 @@ footer .footer__nav .footer__nav__icon {
   /* Ajoutez l'animation fadeOut */
   opacity: 1;
   /* L'élément est visible par défaut */
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
