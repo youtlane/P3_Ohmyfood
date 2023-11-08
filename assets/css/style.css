@@ -33,11 +33,11 @@ header .logo-home.sans-center .back {
   width: 30px;
   display: flex;
   align-items: center;
-  flex: 0.45;
   margin-left: 17px;
+  position: absolute;
 }
-header .logo-home.sans-center__pic {
-  padding: 0 19px 0 16px;
+header .logo-home.sans-center .logo__pic {
+  margin: auto;
 }
 header .location {
   background-color: #EAEAEA;
@@ -127,6 +127,7 @@ ul {
 @media screen and (min-width: 768px) {
   .fonctionnement {
     margin-top: 0;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -203,7 +204,7 @@ ul {
 .fonctionnement .list__service .service__button .service__icon.fa {
   color: #7E7E7E;
 }
-.fonctionnement .list__service .service:hover .service__icon.fa {
+.fonctionnement .list__service .service:hover .service__icon.fa.fa-store {
   color: #9356DC;
 }
 
@@ -334,6 +335,11 @@ footer .footer__title {
   color: white;
   margin-top: 0;
 }
+@media screen and (min-width: 768px) {
+  footer .footer__title {
+    margin-top: 19px;
+  }
+}
 footer .footer__nav {
   padding: 0;
   display: flex;
@@ -344,6 +350,7 @@ footer .footer__nav {
 @media screen and (min-width: 768px) {
   footer .footer__nav {
     flex-direction: row;
+    padding-top: 8px;
   }
 }
 footer .footer__nav .footer__nav__icon {

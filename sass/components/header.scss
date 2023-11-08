@@ -12,18 +12,17 @@ header {
 
     .logo-home.sans-center {
         justify-content: initial;
-
         .back {
             height: 30px;
             width: 30px;
             display: flex;
             align-items: center;
-            flex: 0.45;
             margin-left: 17px;
+            position: absolute;
         }
 
-        &__pic {
-            padding: 0 19px 0 16px;
+        .logo__pic {
+            margin: auto;
         }
     }
 

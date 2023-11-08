@@ -47,23 +47,20 @@
 @mixin heart-icon {
     .fa-regular.fa-heart {
         position: absolute;
-
         transition: opacity 1000ms ease-in-out;
     }
-
     .fa-regular.fa-heart:hover {
         opacity: 0;
         /* fa regular dissapear on hover, fa solid appears instead */
         cursor: pointer;
     }
-
     .fa-solid.fa-heart {
         color: transparent;
         background-image: $gradient;
         background-clip: text;
         -webkit-background-clip: text;
     }
-
+  
 }
 
 /*     style pages menu   */

@@ -13,6 +13,10 @@ footer {
         font-weight: 400;
         color: white;
         margin-top: 0;
+        @include tablet{
+            margin-top: 19px;
+            
+        }
 
     }
 
@@ -24,6 +28,8 @@ footer {
         color: white;
         @include tablet{
             flex-direction: row;
+            padding-top: 8px;
+        
         }
 
         .footer__nav__icon {

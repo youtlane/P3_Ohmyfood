@@ -4,9 +4,6 @@
     object-fit: cover;
     position: absolute;
 }
-
-
-
 .holder {
     width: 100%;
     display: flex;
@@ -25,10 +22,6 @@
     @include desktop{
         width: 80%;
     }
-
-
-
-
     .menu__header {
         display: flex;
         justify-content: space-around;
@@ -56,10 +49,6 @@
 
             @include heart-icon;
         }
-    
-
-
-
         @include desktop {
             justify-content: center;
             gap: 24px;
@@ -94,19 +83,12 @@
             .carte {
                 @include style-card;
                 overflow: hidden;
-
-
-
                 .carte__infos {
                     padding: 15px;
                     display: flex;
                     flex-direction: column;
                     flex: 1;
                     @include text-hide;
-
-
-
-
                     .carte__title {
                         margin: 0;
                         font-size: 18px;
@@ -151,7 +133,7 @@
             .carte:hover .check {
                 opacity: 1;
                 margin-right: 0;
-                box-shadow: 0 4px 15px darken($grey-light, 50%);
+               box-shadow: 0 4px 15px darken($grey-light, 50%);
             }
         }
 
