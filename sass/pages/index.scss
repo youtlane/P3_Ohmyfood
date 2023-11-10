@@ -80,14 +80,16 @@
 
                 .service__icon.fa {
                     color: $icon-grey;
+                  
+                }
+                .service__icon.fa.fa-store {
+                    color: $purple;
                 }
             }
 
         }
 
-        .service:hover .service__icon.fa.fa-store {
-            color: $purple;
-        }
+        
     }
 }
 .restaurants{

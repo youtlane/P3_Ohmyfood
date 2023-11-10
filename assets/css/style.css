@@ -204,7 +204,7 @@ ul {
 .fonctionnement .list__service .service__button .service__icon.fa {
   color: #7E7E7E;
 }
-.fonctionnement .list__service .service:hover .service__icon.fa.fa-store {
+.fonctionnement .list__service .service__button .service__icon.fa.fa-store {
   color: #9356DC;
 }
 
